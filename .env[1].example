@@ -1,0 +1,8 @@
+# Local PostgreSQL connection. Never commit a real .env file or production credentials.
+DATABASE_URL="postgresql://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/eazybuysell?schema=public"
+# Generate a unique random value of at least 32 characters for each environment.
+JWT_SECRET="REPLACE_WITH_A_LONG_RANDOM_SECRET_OF_AT_LEAST_32_CHARACTERS"
+NODE_ENV="development"
+PORT="4000"
+# Comma-separated frontend origins; set this to your actual deployed frontend URL in production.
+CORS_ORIGIN="http://localhost:3000,http://localhost:8081"
